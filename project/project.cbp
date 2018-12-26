@@ -38,12 +38,18 @@
 			<Add option="`sdl2-config --libs`" />
 		</Linker>
 		<Unit filename="include/Application.h" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/GameDefs.h" />
+		<Unit filename="include/Input.h" />
 		<Unit filename="include/MainGame.h" />
+		<Unit filename="include/Player.h" />
 		<Unit filename="include/Renderer.h" />
 		<Unit filename="include/Terrain.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Application.cpp" />
+		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/MainGame.cpp" />
+		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Renderer.cpp" />
 		<Unit filename="src/Terrain.cpp" />
 		<Extensions>

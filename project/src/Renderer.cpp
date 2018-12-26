@@ -12,7 +12,7 @@ Renderer::~Renderer()
 
 void Renderer::drawTerrain(Terrain* terrain)
 {
-
+    m_levelToDraw = terrain->getLevelTexture();
 }
 
 void Renderer::drawScreen()
@@ -21,6 +21,11 @@ void Renderer::drawScreen()
     SDL_RenderClear(m_sdlRenderer);
 
     //draw queues to screen
+
+    if(m_levelToDraw != nullptr)
+    {
+        SDL_RenderCopy(m_sdlRenderer, m_levelToDraw, NULL, NULL);
+    }
 
     SDL_RenderPresent(m_sdlRenderer);
 }

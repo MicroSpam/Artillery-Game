@@ -1,12 +1,13 @@
 #ifndef MAINGAME_H
 #define MAINGAME_H
 
-#include<iostream>
-#include<SDL.h>
-#include<memory>
+#include <iostream>
+#include <SDL.h>
+#include <memory>
 
-#include"Terrain.h"
-#include"Renderer.h"
+#include "Terrain.h"
+#include "Renderer.h"
+#include "Player.h"
 
 class MainGame
 {
@@ -25,6 +26,8 @@ class MainGame
         Renderer m_renderer;
 
         std::unique_ptr<Terrain> m_currentTerrain;
+
+        Player m_player;
 };
 
 #endif // MAINGAME_H

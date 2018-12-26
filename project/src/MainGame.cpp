@@ -13,7 +13,7 @@ MainGame::~MainGame()
 void MainGame::gameLoad()
 {
     m_currentTerrain = std::make_unique<Terrain>();
-    m_currentTerrain->terrainInit(m_renderer.getRenderer(), 1024, 1024);
+    m_currentTerrain->terrainInit(m_renderer.getRenderer(), 800, 600);
 }
 
 void MainGame::gameUnload()
@@ -23,7 +23,7 @@ void MainGame::gameUnload()
 
 void MainGame::gameLoop()
 {
-
+    m_player.PlayerTerrainUpdate(m_currentTerrain->getLevelData());
     m_renderer.drawTerrain(m_currentTerrain.get());
 
     m_renderer.drawScreen();

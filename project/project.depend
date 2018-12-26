@@ -1,13 +1,14 @@
 # depslib dependency file v1.0
-1542421479 source:/home/microspam/artillery/project/src/MainGame.cpp
+1543967704 source:/home/microspam/artillery/project/src/MainGame.cpp
 	"MainGame.h"
 
-1542480256 /home/microspam/artillery/project/include/MainGame.h
+1543967652 /home/microspam/artillery/project/include/MainGame.h
 	<iostream>
 	<SDL.h>
 	<memory>
 	"Terrain.h"
 	"Renderer.h"
+	"Player.h"
 
 1542158227 source:/home/microspam/artillery/project/main.cpp
 	"Application.h"
@@ -336,21 +337,45 @@
 	"begin_code.h"
 	"close_code.h"
 
-1542467448 source:/home/microspam/artillery/project/src/Application.cpp
+1543966138 source:/home/microspam/artillery/project/src/Application.cpp
 	"Application.h"
 
-1542467905 /home/microspam/artillery/project/include/Renderer.h
+1543881595 /home/microspam/artillery/project/include/Renderer.h
 	<memory>
 	<SDL.h>
 	"Terrain.h"
 
-1542467905 source:/home/microspam/artillery/project/src/Renderer.cpp
+1543881582 source:/home/microspam/artillery/project/src/Renderer.cpp
 	"Renderer.h"
 
-1542480172 /home/microspam/artillery/project/include/Terrain.h
+1543889872 /home/microspam/artillery/project/include/Terrain.h
+	"GameDefs.h"
 	<SDL.h>
 	<vector>
+	<stdint.h>
+	<algorithm>
+	<cmath>
 
-1542480256 source:/home/microspam/artillery/project/src/Terrain.cpp
+1543896170 source:/home/microspam/artillery/project/src/Terrain.cpp
 	"Terrain.h"
+	<stdio.h>
+
+1543967111 /home/microspam/artillery/project/include/GameDefs.h
+	<SDL.h>
+	<stdint.h>
+	<stdio.h>
+
+1543967206 /home/microspam/artillery/project/include/Player.h
+	"Terrain.h"
+	"GameDefs.h"
+	"Input.h"
+
+1543972457 /home/microspam/artillery/project/include/Input.h
+	<SDL.h>
+	<stdint.h>
+	<vector>
+
+1543972154 source:/home/microspam/artillery/project/src/Player.cpp
+	"Player.h"
+	<iostream>
 
