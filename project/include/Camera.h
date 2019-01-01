@@ -1,18 +1,22 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
+#include "Matrix.h"
+
 class Camera
 {
     public:
-        Camera(float x, float y, float scale);
+        Camera(Vector2f pos, float scale);
         virtual ~Camera();
+
+        inline Matrix3x3f& GetTransform()
+        { return m_transform; }
 
     protected:
 
     private:
 
-    float m_x, m_y, m_scale;
-    float m_origin_x, m_origin_y;
+    Matrix3x3f m_transform;
 };
 
 

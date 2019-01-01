@@ -15,10 +15,12 @@ void Renderer::drawTerrain(Terrain* terrain)
     m_levelToDraw = terrain->getLevelTexture();
 }
 
-void Renderer::drawScreen()
+void Renderer::drawScreen(Camera& camera)
 {
     SDL_SetRenderDrawColor(m_sdlRenderer, 0, 0, 0, 0);
     SDL_RenderClear(m_sdlRenderer);
+    Vector2f cam_pos = camera.GetTransform().GetVector2f(Vector2f(0.0f, 0.0f));
+    SDL_Rect cam_transform = { };
 
     //draw queues to screen
 

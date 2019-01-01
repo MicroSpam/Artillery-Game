@@ -1,8 +1,10 @@
 #include "Camera.h"
 
-Camera::Camera(float x, float y, float scale) : m_x(x), m_y(y), m_scale(scale)
+Camera::Camera(Vector2f pos, float scale)
 {
-    //ctor
+    m_transform.Translate(pos);
+    Vector2f scaleVec(scale, scale);
+    m_transform.Scale(scaleVec);
 }
 
 Camera::~Camera()

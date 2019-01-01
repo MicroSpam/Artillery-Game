@@ -8,6 +8,7 @@
 #include "Terrain.h"
 #include "Renderer.h"
 #include "Player.h"
+#include "Camera.h"
 
 class MainGame
 {
@@ -28,6 +29,7 @@ class MainGame
         std::unique_ptr<Terrain> m_currentTerrain;
 
         Player m_player;
+        Camera m_camera;
 };
 
 #endif // MAINGAME_H

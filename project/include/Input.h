@@ -26,7 +26,7 @@ static mouse_data getMouseAbs()
 
 static int getMouseButton()
 {
-
+    return 0;
 }
 
 #endif // INPUT_H_INCLUDED

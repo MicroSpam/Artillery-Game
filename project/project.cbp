@@ -42,16 +42,20 @@
 		<Unit filename="include/GameDefs.h" />
 		<Unit filename="include/Input.h" />
 		<Unit filename="include/MainGame.h" />
+		<Unit filename="include/Matrix.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="include/Renderer.h" />
 		<Unit filename="include/Terrain.h" />
+		<Unit filename="include/Vector.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Application.cpp" />
 		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/MainGame.cpp" />
+		<Unit filename="src/Matrix.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Renderer.cpp" />
 		<Unit filename="src/Terrain.cpp" />
+		<Unit filename="src/Vector.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

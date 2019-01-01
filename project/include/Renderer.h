@@ -4,7 +4,8 @@
 #include<memory>
 #include<SDL.h>
 
-#include"Terrain.h"
+#include "Terrain.h"
+#include "Camera.h"
 
 class Renderer
 {
@@ -12,7 +13,7 @@ class Renderer
         Renderer(SDL_Window* window);
         virtual ~Renderer();
 
-        void drawScreen();
+        void drawScreen(Camera& camera);
         void drawTerrain(Terrain* terrain);
 
         inline SDL_Renderer* getRenderer() const

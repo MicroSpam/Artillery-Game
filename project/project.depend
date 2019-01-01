@@ -1,14 +1,15 @@
 # depslib dependency file v1.0
-1543967704 source:/home/microspam/artillery/project/src/MainGame.cpp
+1545936730 source:/home/microspam/artillery/project/src/MainGame.cpp
 	"MainGame.h"
 
-1543967652 /home/microspam/artillery/project/include/MainGame.h
+1545893039 /home/microspam/artillery/project/include/MainGame.h
 	<iostream>
 	<SDL.h>
 	<memory>
 	"Terrain.h"
 	"Renderer.h"
 	"Player.h"
+	"Camera.h"
 
 1542158227 source:/home/microspam/artillery/project/main.cpp
 	"Application.h"
@@ -340,12 +341,13 @@
 1543966138 source:/home/microspam/artillery/project/src/Application.cpp
 	"Application.h"
 
-1543881595 /home/microspam/artillery/project/include/Renderer.h
+1545936719 /home/microspam/artillery/project/include/Renderer.h
 	<memory>
 	<SDL.h>
 	"Terrain.h"
+	"Camera.h"
 
-1543881582 source:/home/microspam/artillery/project/src/Renderer.cpp
+1545893039 source:/home/microspam/artillery/project/src/Renderer.cpp
 	"Renderer.h"
 
 1543889872 /home/microspam/artillery/project/include/Terrain.h
@@ -378,4 +380,23 @@
 1543972154 source:/home/microspam/artillery/project/src/Player.cpp
 	"Player.h"
 	<iostream>
+
+1545936607 source:/home/microspam/artillery/project/src/Camera.cpp
+	"Camera.h"
+
+1545945400 /home/microspam/artillery/project/include/Camera.h
+	"Matrix.h"
+
+1545932133 source:/home/microspam/artillery/project/src/Matrix.cpp
+	"Matrix.h"
+
+1545936704 /home/microspam/artillery/project/include/Matrix.h
+	"Vector.h"
+	<algorithm>
+
+1545932207 source:/home/microspam/artillery/project/src/Vector.cpp
+	"Vector.h"
+
+1545932207 /home/microspam/artillery/project/include/Vector.h
+	<cmath>
 

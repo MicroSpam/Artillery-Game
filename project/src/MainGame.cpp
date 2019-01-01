@@ -1,6 +1,6 @@
 #include "MainGame.h"
 
-MainGame::MainGame(SDL_Window* window) : m_window(window), m_renderer(window)
+MainGame::MainGame(SDL_Window* window) : m_window(window), m_renderer(window), m_camera(Vector2f(0.0f, 0.0f), 1.0f)
 {
     //ctor
 }
@@ -26,5 +26,5 @@ void MainGame::gameLoop()
     m_player.PlayerTerrainUpdate(m_currentTerrain->getLevelData());
     m_renderer.drawTerrain(m_currentTerrain.get());
 
-    m_renderer.drawScreen();
+    m_renderer.drawScreen(m_camera);
 }
